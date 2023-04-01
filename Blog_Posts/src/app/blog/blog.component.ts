@@ -8,10 +8,27 @@ import { BlogService } from '../blog.service';
 })
 export class BlogComponent implements OnInit {
   posts: any[] = [];
+  currentPage = 1;
   constructor(private blogService: BlogService) { }
   ngOnInit(): void {
     this.blogService.getPosts().subscribe(posts => {
       this.posts = posts;
     });
+  }
+
+  nextPage(): void {
+    this.currentPage++;
+    this.blogService.getPosts(this.currentPage).subscribe(posts => {
+      this.posts = posts;
+    });
+  }
+
+  previousPage(): void {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+      this.blogService.getPosts(this.currentPage).subscribe(posts => {
+        this.posts = posts;
+      });
+    }
   }
 }

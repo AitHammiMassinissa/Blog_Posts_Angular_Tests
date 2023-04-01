@@ -1,1 +1,7 @@
-<p>blog-post works!</p>
+<div *ngIf="post" class="blog-post-detail">
+    <h1 class="blog-post-detail-title">{{ post.title.rendered }}</h1>
+    <div class="blog-post-detail-content" [innerHTML]="post.content.rendered"></div>
+    <p class="blog-post-detail-tags">Tags: <span *ngFor="let tag of post.tags">{{ tag.name }}</span></p>
+    <p class="blog-post-detail-date">Date de création : {{ post.date | date }}</p>
+</div>
+  
