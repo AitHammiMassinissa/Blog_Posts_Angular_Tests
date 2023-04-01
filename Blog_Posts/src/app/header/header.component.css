@@ -1,0 +1,132 @@
+.header {
+  width: 100%;
+  font-size: 16px;
+}
+
+.search-back-ground {
+  height: 550px;
+  display: flex;
+  flex-flow: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("../../assets/Tennis_Bad_DESKTOP.webp");
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.logo-anybuddy {
+  width: 200px;
+  cursor: pointer;
+}
+
+.top-nav-bar {
+  display: flex;
+  gap: 1.3vw;
+}
+
+.navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 164.16px;
+  height: 50px;
+  font-size: 1.1em;
+  font-family: Montserrat-Bold;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.navbar-btn-yellow {
+  background-color: #ffd54c;
+  color: #fff;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-section-1 {
+  font-size: 1.7em;
+  text-align: center;
+  font-weight: bold;
+  font-family: Montserrat-Bold;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem !important;
+
+}
+
+.search-div {
+  display: flex;
+  position: relative;
+}
+
+.search-input {
+ 
+  background-image: url("../../assets/search-2-line.png");
+  width: 100%;
+  border-radius: 5rem;
+  height: 60px;
+  font-size: 1.2em;
+  text-align: left;
+  padding-left: 60px;
+  font-family: Montserrat;
+  background-repeat: no-repeat;
+  background-position: left 17px center;
+  border: 0em;
+ 
+}
+
+button, input {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.btn-localise {
+  background: none;
+  border: none;
+}
+.m-auto {
+  margin: auto !important;
+}
+
+
+.align-self-center {
+  align-self: center !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.section-1-form-div {
+  height: 100%;
+  width: 100%;
+}
+.d-flex {
+  display: flex !important;
+}
+
+label {
+  display: inline-block;
+}
+
