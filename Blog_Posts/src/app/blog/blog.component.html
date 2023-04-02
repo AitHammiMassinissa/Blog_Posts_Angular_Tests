@@ -1,5 +1,5 @@
 <div *ngFor="let post of posts" class="blog-post">
-    <h2 class="blog-post-title">{{ post.title.rendered }}</h2>
+    <h4 class="title my-5">{{ post.title.rendered | stripHtml}}</h4>
     <p class="blog-post-excerpt" [innerHTML]="post.excerpt.rendered | stripHtml"></p>
 
     <div class="cta">
