@@ -1,0 +1,25 @@
+
+.blog-post-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc107;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 20px;
+}
+
+.blog-post-excerpt {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.blog-post-excerpt {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
