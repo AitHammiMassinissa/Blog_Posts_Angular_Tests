@@ -6,7 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class StripHtmlPipe implements PipeTransform {
 
   transform(value: string): string {
-    return value.replace(/<[^>]*>/g, '');
+    const withoutTags = value.replace(/<[^>]*>/g, '');
+    const withoutNbsp = withoutTags.replace(/&nbsp;/g, ' ');
+    const withoutApostrophe = withoutNbsp.replace(/&#8217;/g, "'");
+    return withoutApostrophe;
   }
 
 }
+
+
