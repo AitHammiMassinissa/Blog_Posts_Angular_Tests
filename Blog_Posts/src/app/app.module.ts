@@ -8,6 +8,7 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { StripHtmlPipe } from './strip-html.pipe';
 import { BlogService } from './blog.service';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './header/header.component';
     BlogComponent,
     BlogPostComponent,
     StripHtmlPipe,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
