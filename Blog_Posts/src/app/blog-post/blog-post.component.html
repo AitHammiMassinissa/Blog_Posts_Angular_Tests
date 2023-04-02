@@ -1,7 +1,5 @@
-<div *ngIf="post" class="blog-post-detail">
-    <h1 class="blog-post-detail-title">{{ post.title.rendered }}</h1>
-    <div class="blog-post-detail-content" [innerHTML]="post.content.rendered"></div>
-    <p class="blog-post-detail-tags">Tags: <span *ngFor="let tag of post.tags">{{ tag.name }}</span></p>
-    <p class="blog-post-detail-date">Date de création : {{ post.date | date }}</p>
+<div *ngIf="post" class="blog-post">
+    <h2 class="blog-post-title">{{ post.title.rendered | stripHtml}}</h2>
+    <div class="blog-post-excerpt" [innerHTML]="post.content.rendered"></div>
+    <p class="blog-post-detail-tags">Tags: <ng-container *ngFor="let tag of post.tags; let last = last"><span class="tag-value">{{ tag }}</span><ng-container *ngIf="!last">,</ng-container></ng-container></p>    <p class="blog-post-detail-date">Date de création : <span class="date-value">{{ post.date | date }}</span></p> 
 </div>
-  
