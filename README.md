@@ -32,6 +32,10 @@ ng serve
 ```shell
 git clone https://github.com/AitHammiMassinissa/Blog_Posts_Angular_Tests.git
 ```
+***Entrer dans le dossier Blog_Posts***
+```shell
+cd Blog_Posts/
+```
 
 ***Création et lancement de l'image docker***
 
