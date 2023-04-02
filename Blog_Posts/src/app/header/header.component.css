@@ -161,3 +161,8 @@ label {
 .navbar-fixed-logo {
   content: url("https://res.cloudinary.com/anybuddy/image/upload/f_auto/v1677169402/assets/logo/logo-yellow.png");
 }
+
+
+a {
+  text-decoration: none;
+}
